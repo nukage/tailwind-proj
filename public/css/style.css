@@ -1,0 +1,20 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+
+.oswald {
+    font-family: "Oswald";
+}
+.bg-overlay {
+    background:rgba(0, 8, 144, 0.41);
+    /* background-image: url(../images/overlay-pattern3.png); */
+}
+.s1 {
+    /* background-image: url(../images/mixer.jpg) !important; */
+    background-attachment: fixed!important;
+    background-size: cover;
+    background-color:black;
+}
+
+.s1 .container {
+    /* max-width:1000px; */
+}

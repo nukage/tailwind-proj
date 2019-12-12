@@ -1,3 +1,32 @@
+
+
+
+
+
 @tailwind base;
 @tailwind components;
+
+
+.accordian-h3 { 
+  @apply   uppercase block text-3xl py-5 border-gray-800 border px-4 mt-4 cursor-pointer font-black   ;
+}
+.accordian-h3:focus {
+  @apply  outline-none border-risered ;
+}
+
+.qs-title {
+    @apply text-4xl uppercase py-3 text-center  ;
+} 
+
+@screen md {
+    .qs-title {
+        @apply  text-left ;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    @apply text-risered ;
+}
+
+
 @tailwind utilities;

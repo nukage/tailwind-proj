@@ -6,6 +6,42 @@
 @tailwind base;
 @tailwind components;
 
+$risered:   rgba(222,34,92, 1) ;
+$footer-height: 4rem;
+
+html, body {
+  height:100%;
+  margin: 0;
+}
+php {
+  display: none;
+}
+ 
+.element-item{
+  @apply  w-1/4   ;
+}
+
+.body-wrapper{
+  margin-bottom:-$footer-height;
+  min-height: 100%;
+}
+footer { 
+ 
+  border-top: rgba(222,34,92, .5) 1px solid; 
+  height: $footer-height;
+ 
+ 
+  /* background: rgba(0,0,0,.5); */
+
+
+}
+.footer-push {
+  height: $footer-height;
+  width:100%;
+}
+
+
+
 
 .accordian-h3 { 
   @apply   uppercase block text-3xl py-5 border-gray-800 border px-4 mt-4 cursor-pointer font-black   ;

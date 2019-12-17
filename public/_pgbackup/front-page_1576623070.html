@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" wp-template wp-template-export-as="front-page.php" wp-template-master="index.html" wp-template-define-master-page>
+<html lang="en" wp-template wp-template-export-as="front-page.php" wp-template-master="index.html">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,8 +92,8 @@
                         </div>
                     </section>
                     <section id="infoboxes" wp-if-custom="">
-                        <div class="accordion p-3  ">
-                            <h3 class="accordian-h3 container" wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
+                        <div class="accordion p-3 container mx-auto">
+                            <h3 class="accordian-h3" wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
                             if (have_rows('flex1')) :
                             while ( have_rows('flex1') ) : 
                             the_row(); if( get_row_layout() == 'accordion_group' ): 
@@ -101,7 +101,7 @@
                             while ( have_rows('accordion') ) : 
                             the_row();
                             " wp-call-function-2-set="before">Short Bio</h3>
-                            <div class="accordian-body sm:text-xl container " wp-call-function="get_sub_field('body')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="
+                            <div class="sm:text-xl leading-loose  p-4" wp-call-function="get_sub_field('body')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="
                             
                             endwhile; 
                             endif; 
@@ -116,8 +116,8 @@
                                 into growls, screeches, and wobbles. Audiences aren’t sure whether to dance or mosh, all
                                 the while cheering for more gurgling bass.</p>
                             </div>
-                            <h3 class="accordian-h3 container" cms-no-export>Long Bio</h3>
-                            <div class="sm:text-xl leading-loose p-4 container  " cms-no-export>
+                            <h3 class="accordian-h3" cms-no-export>Long Bio</h3>
+                            <div class="sm:text-xl leading-loose p-4  " cms-no-export>
                                 <p> Inspired from a young age by the sounds of synthesizers and heavy metal guitars, Tom
                                 Myruski aka Nukage, set out to create a unique sound combining two things: the
                                 incredibly complex beats of electronic music, and the melodic stylings of progressive
@@ -213,8 +213,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>   <!-- .accordion -->
- 
+                        </div>
                     </section>
                     <!-- .infoboxes -->
                 </div>

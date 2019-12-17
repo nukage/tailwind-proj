@@ -13,6 +13,10 @@ html, body {
   height:100%;
   margin: 0;
 }
+
+a {
+  transition: all 300ms;
+}
 php {
   display: none;
 }
@@ -44,7 +48,10 @@ footer {
 
 
 .accordian-h3 { 
-  @apply   uppercase block text-3xl py-5 border-gray-800 border px-4 mt-4 cursor-pointer font-black   ;
+  @apply   uppercase block text-3xl py-5 border-gray-800 border px-4 mt-4 cursor-pointer font-black   mx-auto  ;
+}
+.accordian-body {
+  @apply leading-loose  p-4  mx-auto;
 }
 .accordian-h3:focus {
   @apply  outline-none border-risered ;
@@ -63,6 +70,27 @@ footer {
 h1, h2, h3, h4, h5 {
     @apply text-risered ;
 }
+
+
+.modal-mc-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  display:none;
+}
+
+
+.press-item {
+  @apply  w-1/2 mt-4   leading-loose;
+ 
+  .inner {
+    @apply border border-gray-800  p-5;
+  }
+}
+@screen  sm  {
+  .press-item { 
+    @apply text-lg;
+  }
+ 
+  }
 
 
 @tailwind utilities;

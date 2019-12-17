@@ -94,8 +94,11 @@
                             <h3 class="accordian-h3" wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
                             if (have_rows('flex1')) :
                             while ( have_rows('flex1') ) : 
+                                                     
                             the_row(); if( get_row_layout() == 'accordion_group' ): 
-                            if( have_rows('accordion') ):                                                                     
+                                                               
+                            if( have_rows('accordion') ): 
+                                                                                                                             
                             while ( have_rows('accordion') ) : 
                             the_row();
                             " wp-call-function-2-set="before">Short Bio</h3>
@@ -133,37 +136,37 @@
                                              $caption = get_sub_field('caption'); 
                                              $category = get_sub_field('category');
                                              $class = ' element-item ' . $category ; 
-                                             $thumb_image = wp_get_attachment_image($image, 'gallery_thumb', " " , array( "draggable" => "false", "class" => "gallery-img" ) );
-                                             $full_image_url = wp_get_attachment_image_src($image, 'full' , false, '' );
+                                             $thumb_image = wp_get_attachment_image($image, 'gallery_thumb', " " , array( "draggable" => "false" ) );
+                                             $full_image_url = wp_get_attachment_image_src($image, 'gallery_thumb' , false, '' );
                                     </php>
                                     <div class="element-item headshot" wp-call-function="$class" wp-call-function-echo="true" wp-call-function-set="attr" wp-call-function-set-attr="class">
                                         <a href="images/gallery/MP303054_md.jpg" data-fancybox="images" wp-call-function="$full_image_url[0]" wp-call-function-set="href" wp-call-function-set-attr="href" wp-call-function-echo="true"> <img src="images/gallery/MP303054_md.jpg" alt="" wp-call-function="$thumb_image " wp-call-function-echo="true"></a>
                                     </div>
-                                    <div cms-no-export class="element-item live">
-                                        <a href="images/gallery/MP303051_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303051_md.jpg" alt=""></a>
+                                    <div class="element-item live">
+                                        <a href="images/gallery/MP303051_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303051_md.jpg" alt="" cms-no-export></a>
                                     </div>
-                                    <div cms-no-export class="element-item heads hot">
-                                        <a href="images/gallery/MP303052_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303052_md.jpg" alt=""></a>
+                                    <div class="element-item headshot">
+                                        <a href="images/gallery/MP303052_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303052_md.jpg" alt="" cms-no-export></a>
                                     </div>
-                                    <div cms-no-export class="element-item live">
-                                        <a href="images/gallery/MP303053_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303053_md.jpg" alt=""></a>
+                                    <div class="element-item live">
+                                        <a href="images/gallery/MP303053_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303053_md.jpg" alt="" cms-no-export></a>
                                     </div>
-                                    <div cms-no-export class="element-item press ">
+                                    <div class="element-item press">
                                         <a href="images/gallery/MP303054_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303054_md.jpg" alt=""></a>
                                     </div>
-                                    <div cms-no-export class="element-item live">
-                                        <a href="images/gallery/MP303055_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303055_md.jpg" alt=""></a>
+                                    <div class="element-item live">
+                                        <a href="images/gallery/MP303055_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303055_md.jpg" alt="" cms-no-export></a>
                                     </div>
-                                    <div cms-no-export class="element-item press ">
+                                    <div class="element-item press">
                                         <a href="images/gallery/MP303056_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303056_md.jpg" alt=""></a>
                                     </div>
-                                    <div cms-no-export class="element-item live">
+                                    <div class="element-item live">
                                         <a href="images/gallery/MP303057_md.jpg" data-fancybox="images"> <img src="images/gallery/MP303057_md.jpg" alt=""></a>
                                     </div>
                                     <php>endwhile;
-                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                endif;
-                                                                                                                                                                                                                                                                                                                                                                                                            </php>
+                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                            endif;
+                                                                                                                                                                                                                                                                                                                                                                        </php>
                                 </div>
                             </div>
                         </div>

@@ -94,8 +94,11 @@
                             <h3 class="accordian-h3" wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
                             if (have_rows('flex1')) :
                             while ( have_rows('flex1') ) : 
+                                                     
                             the_row(); if( get_row_layout() == 'accordion_group' ): 
-                            if( have_rows('accordion') ):                                                                     
+                                                               
+                            if( have_rows('accordion') ): 
+                                                                                                                             
                             while ( have_rows('accordion') ) : 
                             the_row();
                             " wp-call-function-2-set="before">Short Bio</h3>

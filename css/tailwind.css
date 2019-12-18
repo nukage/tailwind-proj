@@ -63,7 +63,7 @@ footer {
 }
 
 .section-title {
-  @apply uppercase block text-3xl py-5   px-4 mt-4 cursor-pointer font-black   mx-auto  text-center py-12;
+  @apply uppercase block text-3xl py-5   px-4 mt-4  font-black   mx-auto  text-center py-12;
 }
 .accordian-body {
   @apply leading-loose  p-4  mx-auto;
@@ -154,6 +154,45 @@ h1, h2, h3, h4, h5 {
   a:hover {
     @apply text-risered underline;
   }
+}
+
+/* VIDEO SECTION */
+
+.video-col  {
+
+  @apply w-1/3 p-2 relative; 
+
+
+  a{
+    
+    @apply border border-gray-800 block 
+  }
+  :hover a {
+  
+  }
+}
+.video-col:hover {
+  a{
+    
+    @apply border-risered;
+
+  }
+  p {
+    @apply text-risered;
+  }
+  .play-icon {
+    opacity: 0;
+  }
+
+}
+.play-icon {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 60px;
+  pointer-events: none;
+  transform: translate(0px, -50%) translate(-50%, 0px);
+  transition: all 300ms;
 }
 
 

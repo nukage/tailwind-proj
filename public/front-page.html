@@ -13,7 +13,7 @@
 </head>
 
 <body class="s1 open-sans text-white">
-    <div class="navbar w-full fixed  ">
+    <div class="navbar w-full fixed z-10 ">
         <div class="bg-black">
             <div class="container mx-auto h-16 px-5  flex flex-row  justify-between items-center ">
                 <a href="#quick-stats" class="filter-gray flex-row flex items-end">
@@ -36,10 +36,11 @@
                     <li class="lah"><a href="#quick-stats">Quick Stats</a></li>
                     <li class="lah"><a href="#bio">Bio</a></li>
                     <li class="lah"><a href="#gallery">Artist Photos</a></li>
-                    <li class="lah"><a href="#video">Videos</a></li>
+                    <li class="lah"><a href="#videos">Videos</a></li>
                     <li class="lah"><a href="#music">Music</a></li>
                     <li class="lah"><a href="#press">Press &amp; Features</a></li>
                     <li class="lah"><a href="#logos">Logos &amp; Banners</a></li>
+                    <li class="lah"><a href="#logos">Contact</a></li>
 
                 </ul>
             </div>
@@ -59,7 +60,7 @@
                             <div class="w-full">
                                 <h3 class="qs-title oswald font-black">Quick Stats</h3>
                             </div>
-                            <div class="sm:w-1/2 w-full font-hairline open-sans  ">
+                            <div class="sm:w-1/2 w-full font-hairline open-sans   ">
                                 <ul>
                                     <li>
                                         <span>ARTIST NAME:</span> Nukage
@@ -203,15 +204,15 @@
                     <div class="gallery">
                         <div class="container mx-auto">
                             <h3 class="section-title">Photo Gallery</h3>
-                            <div class="button-group filter-button-group">
-                                <button data-filter="*" class="btn">Show all</button>
-                                <button data-filter=".headshot" class="btn">headshot</button>
+                            <div class="button-group filter-button-group oswald uppercase">
+                                <button data-filter="*" class="btn uppercase p-2 mb-2 bg-risered_bg border-risered border text-risered ">Show all</button>
+                                <button data-filter=".headshot" class="btn  uppercase p-2 mb-2 bg-risered_bg border-risered_2 text-risered_2 border">headshot</button>
                                 <button data-filter=".live" class="btn">live</button>
                                 <button data-filter=".press" class="btn">press</button>
                             </div>
                         </div>
 
-                        <div class="grid flex flex-row flex-wrap justify-center">
+                        <div class="grid flex flex-row flex-wrap justify-center container mx-auto">
                             <php>
                                 if(have_rows('gallery')) :
                                 while( have_rows('gallery') ): the_row();
@@ -228,36 +229,36 @@
                                 <a href="images/gallery/MP303054_md.jpg" data-fancybox="images"
                                     wp-call-function="$full_image_url[0]" wp-call-function-set="href"
                                     wp-call-function-set-attr="href" wp-call-function-echo="true"> <img
-                                        src="https://via.placeholder.com/500"" alt="" wp-call-function=" $thumb_image "
+                                        src="https://placem.at/things?w=500&h=350&random=12" alt="" wp-call-function=" $thumb_image "
                                         wp-call-function-echo=" true"></a>
                             </div>
                             <div cms-no-export class="element-item live">
                                 <a href="images/gallery/MP303051_md.jpg" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                        src="https://placem.at/things?w=500&h=350&random=11" alt=""></a>
                             </div>
-                            <div cms-no-export class="element-item heads hot">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                            <div cms-no-export class="element-item headshot">
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=1" alt=""></a>
                             </div>
                             <div cms-no-export class="element-item live">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=2" alt=""></a>
                             </div>
                             <div cms-no-export class="element-item press ">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=3" alt=""></a>
                             </div>
                             <div cms-no-export class="element-item live">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=4" alt=""></a>
                             </div>
                             <div cms-no-export class="element-item press ">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=5" alt=""></a>
                             </div>
                             <div cms-no-export class="element-item live">
-                                <a href="https://via.placeholder.com/500" data-fancybox="images"> <img
-                                        src="https://via.placeholder.com/500" alt=""></a>
+                                <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img
+                                        src="https://placem.at/things?w=500&h=350&random=6" alt=""></a>
                             </div>
                             <php>endwhile;
 
@@ -270,6 +271,47 @@
                     <div class="bg-overlay-2">
                         <div class="container mx-auto">
                             <h3 class="section-title">Videos</h3>
+                            <div class="video-block flex flex-row flex-wrap w-full">
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=df22gfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=dggfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=dfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=df223egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=df2egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                <div class="video-col ">
+                                    <img class="play-icon" src="images/play-icon.svg" alt="">
+                                    <a class="" href="#" data-fancybox="video"> <img
+                                        src="https://placem.at/things?w=640&h=400&random=dfsfd2egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                </div>
+                                
+                                
+                            </div>    
                         </div>
                     </div>
                 </section>

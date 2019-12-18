@@ -6,8 +6,23 @@
 @tailwind base;
 @tailwind components;
 
+/*  Mixins */
+
 $risered:   rgba(222,34,92, 1) ;
 $footer-height: 4rem;
+
+/* My Utility Classes */
+
+/* Font Utilities */
+.oswald {
+  font-family: "Oswald";
+}
+
+.open-sans {
+  font-family: "Open Sans";
+}
+
+/* GLOBALS */
 
 html, body {
   height:100%;
@@ -17,6 +32,7 @@ html, body {
 a {
   transition: all 300ms;
 }
+
 php {
   display: none;
 }
@@ -29,26 +45,25 @@ php {
   margin-bottom:-$footer-height;
   min-height: 100%;
 }
+
 footer { 
- 
   border-top: rgba(222,34,92, .5) 1px solid; 
   height: $footer-height;
- 
- 
   /* background: rgba(0,0,0,.5); */
-
-
 }
+
 .footer-push {
   height: $footer-height;
   width:100%;
 }
 
-
-
-
 .accordian-h3 { 
-  @apply   uppercase block text-3xl py-5 border-gray-800 border px-4 mt-4 cursor-pointer font-black   mx-auto  ;
+  @apply   uppercase block text-2xl py-3 border-gray-800 border px-4 mt-4 cursor-pointer font-bold   mx-auto text-risered_1 ;
+  @extend .oswald;
+}
+
+.section-title {
+  @apply uppercase block text-3xl py-5   px-4 mt-4 cursor-pointer font-black   mx-auto  text-center py-12;
 }
 .accordian-body {
   @apply leading-loose  p-4  mx-auto;
@@ -69,14 +84,13 @@ footer {
 
 h1, h2, h3, h4, h5 {
     @apply text-risered ;
+    @extend .oswald;
 }
-
 
 .modal-mc-bg {
   background-color: rgba(0, 0, 0, 0.6);
   display:none;
 }
-
 
 .press-item {
   @apply  w-1/2 mt-4   leading-loose;
@@ -89,8 +103,67 @@ h1, h2, h3, h4, h5 {
   .press-item { 
     @apply text-lg;
   }
- 
-  }
+}
 
+
+/* GLOBAL */
+/* NAV MENU */
+
+.bg-overlay {
+  background: rgba(0, 8, 144, .3);
+  /* background-image: url(../images/overlay-pattern3.png); */
+ 
+}
+
+.bg-overlay-2 {
+  background: rgb(5, 7, 27);
+}
+
+
+.navbar {
+  border-bottom: rgba(222,34,92, .5) 1px solid;
+}
+
+/* Submenu */
+
+.nav-sub-menu {
+  .current {
+    @apply text-risered_1;
+  }
+  li{
+    @apply  cursor-pointer  block inline-block flex-grow; 
+
+    :hover {
+      @apply text-risered ;
+    }
+    a{
+      @apply block;
+    }
+  }
+}
+.filter-gray:hover{
+ 
+  filter: blur(5px) grayscale(100%) brightness(200%);
+}
+/* QUICK STATS */
+
+.media-notables{
+  a{
+
+  }
+  a:hover {
+    @apply text-risered underline;
+  }
+}
+
+
+/* MISC */
+/* Scroll Fix http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B  */ 
+section:before {
+  display: block;
+  content: "";
+  height: 3rem;
+  margin: -3rem 0 0;
+}
 
 @tailwind utilities;

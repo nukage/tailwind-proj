@@ -1,6 +1,15 @@
 var nukage;
 $(function () {
     nukage = {
+      combinedScroll: function() {
+        $(document).ready(function () {
+          console.log ('combineScroll Loaded')
+          // Hook up the current state to the nav bar
+          $('.nav-sub-menu').onePageNav();
+          $.localScroll({ duration:500, });
+          
+        });
+      },
         
         gallery: function (){
             
@@ -114,6 +123,7 @@ $(function () {
     nukage.faq();
     nukage.gallery();
     nukage.mainModal('.sign-up-nav-link', '.modal-mc-bg', '.modal-close', '.modal-mc');
+    nukage.combinedScroll();
 
 });
 

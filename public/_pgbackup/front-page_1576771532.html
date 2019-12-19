@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" wp-template wp-template-export-as="front-page.php" wp-template-master="index.html" wp-template-define-master-page>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nukage | Electronic Music Artist and Performer </title>
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="build/tailwind.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="s1 open-sans text-white">
+        <div class="navbar w-full fixed z-10 ">
+            <div class="bg-black">
+                <div class="container mx-auto h-16 px-5  flex flex-row  justify-between items-center ">
+                    <a href="#quick-stats" class="filter-gray flex-row flex items-end"> <img class=" sm:h-10 h-6" src="images/nukage logo.png"> <span class="oswald font-black flex-grow ml-4 text-xl text-risered_1 ital">EPK</span> </a>
+                    <div class="">
+                        <a href="#" class="sign-up-nav-link uppercase p-2 rounded-lg hover:bg-risered hover:text-black ">Sign Up <span class="md:inline hidden ">For Updates</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-trans-bk">
+                <div class="nav-sub-menu container mx-auto h-8 px-5  flex flex-row justify-between items-center oswald uppercase text-sm ">
+                    <ul class="menu flex flex-row items-center  align-middle text-center w-full justify-between">
+                        <li class="lah">
+                            <a href="#quick-stats">Quick Stats</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#bio">Bio</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#gallery">Artist Photos</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#videos">Videos</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#music">Music</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#press">Press &amp; Features</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#logos">Logos &amp; Banners</a>
+                        </li>
+                        <li class="lah">
+                            <a href="#logos">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body-wrapper ">
+            <div class="main-content" wp-site-content>
+                <div class="bg-overlay ">
+                    <section id="quick-stats" class="px-5  pt-20">
+                        <div class="container mx-auto flex md:flex-row flex-col py-10">
+                            <div class=" md:w-1/3 w-full flex items-center  ">
+                                <img class="mx-auto" src="images/Nukage-Headshot.png">
+                            </div>
+                            <div class="md:w-2/3 w-full container flex flex-row quick-list-holder md:pl-16  flex-wrap ">
+                                <div class="w-full">
+                                    <h3 class="qs-title oswald font-black">Quick Stats</h3>
+                                </div>
+                                <div class="sm:w-1/2 w-full font-hairline open-sans   ">
+                                    <ul>
+                                        <li>
+                                            <span>ARTIST NAME:</span> Nukage
+                                        </li>
+                                        <li>
+                                            <span>EMAIL:</span> nukage@nukage.net
+                                        </li>
+                                        <li>
+                                            <span>Website:</span> www.nukage.net
+                                        </li>
+                                        <li>
+                                            <span>Genre:</span> Dubstep, Future Bass, Trap
+                                        </li>
+                                        <li>
+                                            <span>Shows Played:</span> 100+
+                                        </li>
+                                        <li>
+                                            <span>Social Links:</span>
+                                            <br> Instagram Facebook Youtube Soundcloud
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sm:w-1/2 w-full">
+                                    <ul>
+                                        <li>
+                                            <span>REAL NAME:</span> Tom Myruski
+                                        </li>
+                                        <li>
+                                            <span>Website:</span> www.nukage.net
+                                        </li>
+                                        <li>
+                                            <span>Residence:</span> Brooklyn, NY
+                                        </li>
+                                        <li>
+                                            <span>Perfomance Style:</span> Live PA or DJ Set
+                                        </li>
+                                        <li>
+                                            <span>Beatport Charting Releases:</span> 5
+                                        </li>
+                                        <li>
+                                            <span>Support From:</span> Ill Gates, KJ Sawka, Future Magic, Demien Sixx
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-full media-notables">
+                                    <ul>
+                                        <li>
+                                            <span>MEDIA NOTABLES:</span>
+                                            <br>
+                                            <a href="#">EDM Artist Organizes NYC Electronic Music Community (Interview)</a>
+                                            | 
+                                            <a href="#">Demien Sixx &
+                                            Nukage Release Latest Original – “Maximum Overdrive”</a> | 
+                                            <a href="#">Your
+                                            EDM Premiere:
+                                            Archtekt & Nukage - Black Mass</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="bio">
+                        <div class="bg-overlay-2">
+                            <div class="container mx-auto">
+                                <h3 class="section-title">Bio</h3>
+                                <div class="accordion p-3  ">
+                                    <h3 class="accordian-h3 container " wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
+                            if (have_rows('flex1')) :
+                            while ( have_rows('flex1') ) : 
+                            the_row(); if( get_row_layout() == 'accordion_group' ): 
+                            if( have_rows('accordion') ):                                                                     
+                            while ( have_rows('accordion') ) : 
+                            the_row();
+                            " wp-call-function-2-set="before">Short Bio</h3>
+                                    <div class="accordian-body container " wp-call-function="get_sub_field('body')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="
+                            
+                            endwhile; 
+                            endif; 
+                            endif;
+                            endwhile;
+                            endif;
+                       
+                            " wp-call-function-2-set="after">
+                                        <p>This year, Nukage has raised the bar yet again. Using his knowledge of sound
+                                        design as
+                                        well as guitar prowess, he created a show conceptualized to truly play his music
+                                        live.
+                                        His guitar becomes a filtered, distorted ‘reese’ bass, which is then further
+                                        modulated
+                                        into growls, screeches, and wobbles. Audiences aren’t sure whether to dance or
+                                        mosh, all
+                                        the while cheering for more gurgling bass.</p>
+                                    </div>
+                                    <h3 class="accordian-h3 oswald " cms-no-export>Long Bio</h3>
+                                    <div class="leading-loose p-4   " cms-no-export>
+                                        <p> Inspired from a young age by the sounds of synthesizers and heavy metal guitars,
+                                        Tom
+                                        Myruski aka Nukage, set out to create a unique sound combining two things: the
+                                        incredibly complex beats of electronic music, and the melodic stylings of
+                                        progressive
+                                        heavy metal.</p>
+                                        <p>Somewhere along the way, he encountered heavy bass music via artists like
+                                        Skrillex,
+                                        Bassnectar, and Kill the Noise and he was hooked. Within only a few months of
+                                        releasing
+                                        his first dubstep remix, he had his first hit with Zedd – Clarity (Nukage
+                                        Remix). It was
+                                        featured on ThisSongSlaps and was listed as one of the top remixes for that
+                                        song. Since
+                                        then, Nukage has been turning twisting, filtered bass and meticulously crafted
+                                        beats
+                                        into undeniable, funky filth.</p>
+                                        <p>This year, Nukage has raised the bar yet again. Using his knowledge of sound
+                                        design as
+                                        well as guitar prowess, he created a show conceptualized to truly play his music
+                                        live.
+                                        His guitar becomes a filtered, distorted ‘reese’ bass, which is then further
+                                        modulated
+                                        into growls, screeches, and wobbles. Audiences aren’t sure whether to dance or
+                                        mosh, all
+                                        the while cheering for more gurgling bass.</p>
+                                        <p>So get the new album now, load up the tracks, and brace yourself. Because as
+                                        Kolourbridge
+                                        Records once wrote, his beats are “as seismic as they are meticulously
+                                        well-written.” </p>
+                                    </div>
+                                </div>                                 
+                                <!-- .accordion -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- #bio -->
+                    <section id="gallery">
+                        <div class="gallery">
+                            <div class="container mx-auto">
+                                <h3 class="section-title">Photo Gallery</h3>
+                                <div class="button-group filter-button-group oswald uppercase">
+                                    <button data-filter="*" class="btn uppercase p-2 mb-2 bg-risered_bg border-risered border text-risered ">Show all</button>
+                                    <button data-filter=".headshot" class="btn  uppercase p-2 mb-2 bg-risered_bg border-risered_2 text-risered_2 border">headshot</button>
+                                    <button data-filter=".live" class="btn">live</button>
+                                    <button data-filter=".press" class="btn">press</button>
+                                </div>
+                            </div>
+                            <div class="grid flex flex-row flex-wrap justify-center container mx-auto">
+                                <php>
+                                if(have_rows('gallery')) :
+                                while( have_rows('gallery') ): the_row();
+                                $image = get_sub_field('image');
+                                $caption = get_sub_field('caption');
+                                $category = get_sub_field('category');
+                                $class = ' element-item ' . $category ;
+                                $thumb_image = wp_get_attachment_image($image, 'gallery_thumb', " " , array(
+                                "draggable" => "false", "class" => "gallery-img" ) );
+                                $full_image_url = wp_get_attachment_image_src($image, 'full' , false, '' );
+                                </php>
+                                <div class="element-item headshot" wp-call-function="$class" wp-call-function-echo="true" wp-call-function-set="attr" wp-call-function-set-attr="class">
+                                    <a href="images/gallery/MP303054_md.jpg" data-fancybox="images" wp-call-function="$full_image_url[0]" wp-call-function-set="href" wp-call-function-set-attr="href" wp-call-function-echo="true"> <img src="https://placem.at/things?w=500&h=350&random=12" alt="" wp-call-function=" $thumb_image "></a>
+                                </div>
+                                <div cms-no-export class="element-item live">
+                                    <a href="images/gallery/MP303051_md.jpg" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=11" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item headshot">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=1" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item live">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=2" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item press ">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=3" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item live">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=4" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item press ">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=5" alt=""></a>
+                                </div>
+                                <div cms-no-export class="element-item live">
+                                    <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=6" alt=""></a>
+                                </div>
+                                <php>endwhile;
+                                                                
+                                                                                                endif;
+                                                                                            </php>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="videos">
+                        <div class="bg-overlay-2">
+                            <div class="container mx-auto">
+                                <h3 class="section-title">Videos</h3>
+                                <div class="video-block flex flex-row flex-wrap w-full">
+                                    <php>
+                                    if(have_rows('video_gallery')) :
+                                    while( have_rows('video_gallery') ): the_row();
+                                    $image = get_sub_field('placeholder_image');
+                                    $caption = get_sub_field('video_caption');
+                                    $thumb_image = wp_get_attachment_image($image, 'gallery_thumb', " " , array(
+                                    "draggable" => "false" ) );
+                                    $full_image_url = wp_get_attachment_image_src($image, 'full' , false, '' );
+                                    $link = get_sub_field('video');
+                                    </php>
+                                    <div class="video-col ">
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/j-2ZxldMO-M" data-fancybox="video" wp-call-function="$link" wp-call-function-echo="true" wp-call-function-set="href"> <img src="https://placem.at/things?w=640&h=400&random=df22gfe" alt="" wp-call-function=" $thumb_image_url" wp-call-function-set="attr" wp-call-function-set-attr="src" wp-call-function-echo="true"></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm" wp-call-function="$caption" wp-call-function-echo="true" wp-call-function-set="content">Video Title</p>
+                                    </div>                                     
+                                    <div class="video-col " cms-no-export>
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/ZY3J3Y_OU0w" data-fancybox="video"> <img src="https://placem.at/things?w=640&h=400&random=dggfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                    </div>
+                                    <div class="video-col " cms-no-export>
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/3obig1XeOlw" data-fancybox="video"> <img src="https://placem.at/things?w=640&h=400&random=dfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                    </div>
+                                    <div class="video-col " cms-no-export>
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/jpTs2S6AcNA" data-fancybox="video"> <img src="https://placem.at/things?w=640&h=400&random=df223egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                    </div>
+                                    <div class="video-col " cms-no-export>
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/jpTs2S6AcNA" data-fancybox="video"> <img src="https://placem.at/things?w=640&h=400&random=df2egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                    </div>
+                                    <div class="video-col " cms-no-export>
+                                        <img class="play-icon" src="images/play-icon.svg" alt="">
+                                        <a class="" href="https://www.youtube.com/embed/jpTs2S6AcNA" data-fancybox="video"> <img src="https://placem.at/things?w=640&h=400&random=dfsfd2egfe" alt=""></a>
+                                        <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
+                                    </div>
+                                    <php>endwhile;
+                                                                                                            endif;
+                                                                                                        </php>
+                                </div>                                 
+                            </div>
+                        </div>
+                    </section>
+                    <section id="music">
+                        <div class="container mx-auto">
+                            <h3 class="section-title">Music</h3>
+                        </div>
+                    </section>
+                    <section id="press">
+                        <div class="bg-overlay-2">
+                            <div class="container mx-auto">
+                                <h3 class="section-title">Press &amp; Features</h3>
+                                <div class="press flex flex-row flex-wrap">
+                                    <php>if ( have_rows('news_items') ) :
+                                                                                                            while( have_rows('news_items') ) : the_row();
+                                                                                                        </php>
+                                    <div class="press-item   ">
+                                        <div class="inner ">
+                                            <h4 class="press-quote" wp-call-function="get_sub_field('quote')" wp-call-function-set="content" wp-call-function-echo="true">"Quote Goes
+                                            Here" </h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank" wp-call-function="get_sub_field('news_source')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="get_sub_field('news_link')" wp-call-function-2-set="href" wp-call-function-echo-2="true">- This Song
+                                            Slaps</a>
+                                        </div>
+                                    </div>
+                                    <php>endwhile;
+                                                                                                            endif;
+                                                                                                        </php>
+                                    <div class="press-item    ">
+                                        <div class="inner ">
+                                            <h4 class="press-quote">"Quote Goes Here"</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">- This
+                                            Song
+                                            Slaps</a>
+                                        </div>
+                                    </div>
+                                    <div class="press-item  ">
+                                        <div class="inner ">
+                                            <h4 class="press-quote">"Quote Goes Here"</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">- This
+                                            Song
+                                            Slaps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="logos">
+                        <h3 class="section-title">Logos &amp; Banners</h3>
+                    </section>
+                </div>
+            </div>
+            <!-- .by-overlay -->
+            <div class="footer-push"></div>
+        </div>
+        <!-- .body-wrapper -->
+        <div class="modal-mc-bg fixed h-full w-full       left-0 top-0    justify-center  items-center ">
+            <div class="container h-full w-full flex flex-col items-center justify-center mx-auto  ">
+                <div class="modal-mc max-w-lg lg:1/2 md:w-3/4 w-5/6 text-black bg-gray-400 rounded-lg   ">
+                    <h3 class="text-3xl uppercase font-black mt-8  text-center  ">Sign Up</h3>
+                    <p class="m-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Tincidunt ornare massa eget egestas purus. Orci phasellus egestas tellus rutrum
+                    tellus pellentesque eu tincidunt. Nascetur ridiculus mus mauris vitae ultricies leo integer. Magna
+                    ac
+                    placerat vestibulum lectus mauris ultrices eros. Pulvinar pellentesque habitant morbi tristique.
+                    Adipiscing elit ut aliquam purus sit amet luctus venenatis. Tellus orci ac auctor augue mauris
+                    augue. Ut
+                    venenatis tellus in metus vulputate. Amet nulla facilisi morbi tempus iaculis urna id volutpat
+                    lacus.
+                    Turpis nunc eget lorem dolor sed viverra ipsum nunc. Turpis egestas maecenas pharetra convallis
+                    posuere
+                    morbi leo urna molestie. Adipiscing elit pellentesque habitant morbi tristique senectus et netus.
+                    Enim
+                    diam vulputate ut pharetra sit amet aliquam id diam. Egestas sed sed risus pretium quam vulputate.
+                    Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Quis commodo odio aenean sed
+                    adipiscing
+                    diam. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Arcu ac tortor dignissim
+                    convallis
+                    aenean. Tellus at urna condimentum mattis pellentesque id nibh.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container mx-auto flex flex-row items-center h-full p-5 align-middle justify-center text-gray-700 text-xs">
+                &copy; Copyright 2020 Nukage
+</div>
+        </footer>
+        <!-- .body-wrapper -->
+        <!-- Js lib -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.combinedScroll.js"></script> -->
+        <script type="text/javascript" src="js/jquery.nav.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>

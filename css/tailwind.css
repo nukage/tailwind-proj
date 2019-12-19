@@ -10,6 +10,8 @@
 
 $risered:   rgba(222,34,92, 1) ;
 $footer-height: 4rem;
+$nav1-height: 4rem;
+$nav1-height-mobile: 3.3rem;
 
 /* My Utility Classes */
 
@@ -37,9 +39,6 @@ php {
   display: none;
 }
  
-.element-item{
-  @apply  w-1/4   ;
-}
 
 .body-wrapper{
   margin-bottom:-$footer-height;
@@ -92,16 +91,37 @@ h1, h2, h3, h4, h5 {
   display:none;
 }
 
+
+/* PRESS & FEATURES */
+
+
 .press-item {
-  @apply  w-1/2 mt-4   leading-loose;
+  @apply  w-3/4 mt-4   leading-loose;
  
   .inner {
-    @apply border border-gray-800  p-5;
+    @apply   p-5 text-left flex-grow items-stretch; 
+  }
+  .press-link {
+    @apply text-right;
   }
 }
 @screen  sm  {
   .press-item { 
-    @apply text-lg;
+    @apply text-lg w-1/2 text-center;
+  }
+  .press-link {
+    text-align: inherit;
+  }
+}
+
+
+
+@screen md {
+  .press-item {
+    @apply w-1/3;
+    .inner {
+      @apply text-left;
+    }
   }
 }
 
@@ -122,6 +142,19 @@ h1, h2, h3, h4, h5 {
 
 .navbar {
   border-bottom: rgba(222,34,92, .5) 1px solid;
+  transition: all 300ms;
+  top:0;
+  
+}
+
+.navbar.headroom--unpinned {
+  top:-$nav1-height-mobile;
+}
+
+@screen md {
+  .navbar.headroom--unpinned {
+    top:-$nav1-height;
+  }
 }
 
 /* Submenu */
@@ -131,7 +164,7 @@ h1, h2, h3, h4, h5 {
     @apply text-risered_1;
   }
   li{
-    @apply  cursor-pointer  block inline-block flex-grow; 
+    @apply  cursor-pointer     w-1/4 pb-2 text-center;
 
     :hover {
       @apply text-risered ;
@@ -140,7 +173,19 @@ h1, h2, h3, h4, h5 {
       @apply block;
     }
   }
+ 
 }
+
+ 
+
+@screen md {
+  .nav-sub-menu {
+    li{
+      @apply flex-grow w-auto inline-block 
+    }
+  }
+}
+
 .filter-gray:hover{
  
   filter: blur(5px) grayscale(100%) brightness(200%);
@@ -156,11 +201,43 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* Gallery Section */
+
+#gallery {
+  .btn {
+    @apply uppercase p-2 mb-2 bg-risered_bg border-risered_2 text-risered_2 border;
+  }
+  .btn:focus { 
+   
+    @apply uppercase p-2 mb-2 bg-risered_bg border-risered border text-risered;
+    border:none;
+    box-shadow:none;
+  }
+} 
+
+.element-item{
+  @apply  w-1/2   ;
+
+}
+
+@screen md {
+  .element-item {
+    @apply w-1/4 ; 
+  }
+}
+
+
 /* VIDEO SECTION */
+
+@screen md {
+  .video-col {
+    @apply w-1/3 ; 
+  }
+}
 
 .video-col  {
 
-  @apply w-1/3 p-2 relative; 
+  @apply w-1/2 p-2 relative; 
 
 
   a{
@@ -195,6 +272,14 @@ h1, h2, h3, h4, h5 {
   transition: all 300ms;
 }
 
+/* CONTACT SECTION */
+
+.contact-title .fa-circle {
+  font-size: .3rem;
+ position:relative;
+ bottom:.5rem;
+ @apply px-2;
+}
 
 /* MISC */
 /* Scroll Fix http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B  */ 

@@ -6,9 +6,17 @@ $(function () {
           console.log ('combineScroll Loaded')
           // Hook up the current state to the nav bar
           $('.nav-sub-menu').onePageNav();
-          $.localScroll({ duration:500, });
-          
         });
+      },
+
+      headroom: function() {
+ 
+            // grab an element
+            var myElement = document.querySelector(".navbar");
+            // construct an instance of Headroom, passing the element
+            var headroom  = new Headroom(myElement);
+            // initialise
+            headroom.init();
       },
         
         gallery: function (){
@@ -23,7 +31,13 @@ $(function () {
                           ]
                     });
                     
+                    // Init Isotope
+                    var $grid = $(".grid").isotope({
+                      itemSelector: '.element-item' 
+                      
 
+                      // options
+                  });
                     
                     // Filter items on button click
                     $(".filter-button-group").on("click", "button", function() {
@@ -124,6 +138,7 @@ $(function () {
     nukage.gallery();
     nukage.mainModal('.sign-up-nav-link', '.modal-mc-bg', '.modal-close', '.modal-mc');
     nukage.combinedScroll();
+    nukage.headroom();
 
 });
 

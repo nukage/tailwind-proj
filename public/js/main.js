@@ -1,6 +1,14 @@
 var nukage;
 $(function () {
     nukage = {
+
+      skrollr: function(){
+        skrollr.init({
+          // smoothScrolling: false,
+          // mobileDeceleration: 0.004
+        });
+      },
+
       combinedScroll: function() {
         $(document).ready(function () {
           console.log ('combineScroll Loaded')
@@ -139,6 +147,7 @@ $(function () {
     nukage.mainModal('.sign-up-nav-link', '.modal-mc-bg', '.modal-close', '.modal-mc');
     nukage.combinedScroll();
     nukage.headroom();
+    nukage.skrollr();
 
 });
 

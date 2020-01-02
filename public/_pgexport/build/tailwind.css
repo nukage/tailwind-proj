@@ -950,6 +950,83 @@ h1, h2, h3, h4, h5 {
   padding-right: 0.5rem;
 }
 
+.wpcf7 form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wpcf7 form input[type="text"], .wpcf7 form input[type="email"]  {
+    margin: 0.5rem;
+    width: 100%;
+    background: rgb(5, 7, 27);
+    border-color: #cbd5e0;
+    border-width: 1px;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem
+  }
+
+.wpcf7 form .input-text-wrapper{
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+.wpcf7 form .textarea-wrapper {
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+.wpcf7 form textarea {
+    margin: 0.5rem;
+    width: 100%;
+    background: rgb(5, 7, 27);
+    border-color: #cbd5e0;
+    border-width: 1px;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    height: 16rem;
+  }
+
+.wpcf7 form .wcf7-send {
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+.wpcf7 form .wcf7-send input {
+      transition: 300ms all;
+      font-family: "Oswald";
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      border-width: 1px;
+      border-color: #DE225C;
+      background-color: #080003;
+      color: #DE225C;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 100;
+      font-size: 1.25rem;
+    }
+
+.wpcf7 form .wcf7-send input:hover{
+      background-color: #DE225C;
+      color: #000;
+    }
+
+@media (min-width: 1024px) {
+  .wpcf7 form .input-text-wrapper {
+    width: 50%;
+  }
+}
+
 /* MISC */
 
 /* Scroll Fix http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B  */

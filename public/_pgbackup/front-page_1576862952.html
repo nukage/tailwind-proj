@@ -11,14 +11,13 @@
         <link rel="stylesheet" href="build/tailwind.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="s1 raleway text-white">
+    <body class="s1 open-sans text-white">
         <div class="navbar w-full fixed z-10 ">
             <div class="nav-main-menu bg-black">
-                <div class="container mx-auto sm:h-24 h-16 px-5  flex flex-row  justify-between items-center ">
-                    <a href="#quick-stats" class="filter-gray flex-row flex items-end"> <img class=" sm:h-12 h-6" src="images/nukage logo.png">
-                         <span class="oswald font-black flex-grow ml-4 text-2xl text-risered_1 ital">EPK</span> </a>
+                <div class="container mx-auto h-16 px-5  flex flex-row  justify-between items-center ">
+                    <a href="#quick-stats" class="filter-gray flex-row flex items-end"> <img class=" sm:h-10 h-6" src="images/nukage logo.png"> <span class="oswald font-black flex-grow ml-4 text-xl text-risered_1 ital">EPK</span> </a>
                     <div class="">
-                        <a href="#" class="sign-up-nav-link text-risered border border-risered uppercase p-2 rounded-lg hover:bg-risered hover:text-black oswald ">Sign Up <span class="md:inline hidden ">For Updates</span></a>
+                        <a href="#" class="sign-up-nav-link uppercase p-2 rounded-lg hover:bg-risered hover:text-black ">Sign Up <span class="md:inline hidden ">For Updates</span></a>
                     </div>
                 </div>
             </div>
@@ -43,9 +42,9 @@
                         <li class="lah">
                             <a href="#press">Press <span class="md:inline hidden ">   &amp; Features</span></a>
                         </li>
-                        <!-- <li class="lah">
+                        <li class="lah">
                             <a href="#logos">Logos<span class="md:inline hidden ">  &amp; Banners </span></a>
-                        </li> -->
+                        </li>
                         <li class="lah">
                             <a href="#contact">Contact</a>
                         </li>
@@ -56,18 +55,16 @@
         <div class="body-wrapper ">
             <div class="main-content" wp-site-content>
                 <div class="bg-overlay ">
-                    <section id="quick-stats" class="oswald md:text-xl">
-                        <div class="qs-bg">
-                            <div class="  px-5   pt-48 pb-32">
+                    <section id="quick-stats" class="px-5  pt-20">
                         <div class="container mx-auto flex md:flex-row flex-col py-10">
                             <div class=" md:w-1/3 w-full flex items-center  ">
                                 <img class="mx-auto" src="images/Nukage-Headshot.png">
                             </div>
                             <div class="md:w-2/3 w-full container flex flex-row quick-list-holder md:pl-16  flex-wrap ">
                                 <div class="w-full">
-                                    <h3 class="qs-title oswald font-black  ">Quick Stats</h3>
+                                    <h3 class="qs-title oswald font-black">Quick Stats</h3>
                                 </div>
-                                <div class="sm:w-1/2 w-full font-hairline    ">
+                                <div class="sm:w-1/2 w-full font-hairline open-sans   ">
                                     <ul>
                                         <li>
                                             <span>ARTIST NAME:</span> Nukage
@@ -129,18 +126,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
                     </section>
-                    <section id="bio" class="">
-                        <div class="bio-bg  gray-txt-1 font-medium ">
-                            <div class="bio-overlay   pt-16  pb-32">
-
+                    <section id="bio">
+                        <div class="bg-overlay-2">
                             <div class="container mx-auto">
-                                <h3 class="section-title ">Bio</h3>
-                                <div class="header-strips-1"></div>
+                                <h3 class="section-title">Bio</h3>
                                 <div class="accordion p-3  ">
-                                    <h3 class="accordian-h3 gray-txt-2 container " wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
+                                    <h3 class="accordian-h3 container " wp-call-function="get_sub_field('title');" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2=" 
                             if (have_rows('flex1')) :
                             while ( have_rows('flex1') ) : 
                             the_row(); if( get_row_layout() == 'accordion_group' ): 
@@ -148,7 +140,6 @@
                             while ( have_rows('accordion') ) : 
                             the_row();
                             " wp-call-function-2-set="before">Short Bio</h3>
-                         
                                     <div class="accordian-body container " wp-call-function="get_sub_field('body')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="
                             
                             endwhile; 
@@ -168,7 +159,7 @@
                                         mosh, all
                                         the while cheering for more gurgling bass.</p>
                                     </div>
-                                    <h3 class="accordian-h3 gray-txt-2   " cms-no-export>Long Bio</h3>
+                                    <h3 class="accordian-h3 oswald " cms-no-export>Long Bio</h3>
                                     <div class="leading-loose p-4   " cms-no-export>
                                         <p> Inspired from a young age by the sounds of synthesizers and heavy metal guitars,
                                         Tom
@@ -205,16 +196,14 @@
                                 <!-- .accordion -->
                             </div>
                         </div>
-                    </div>
                     </section>
                     <!-- #bio -->
                     <section id="gallery">
-                        <div class="bg-gallery">
-                            <div class="gallery ">
+                        <div class="bg-risered_bg_1">
+                            <div class="gallery">
                                 <div class="container mx-auto">
-                                    <h3 class="section-title  pt-24">Photo Gallery</h3>
-                                    <div class="header-strips-1"></div>
-                                    <div class="button-group filter-button-group oswald uppercase mx-auto inline-block text-center">
+                                    <h3 class="section-title">Photo Gallery</h3>
+                                    <div class="button-group filter-button-group oswald uppercase">
                                         <button data-filter="*" class="btn  ">Show
                                             all
 </button>
@@ -223,7 +212,7 @@
                                         <button data-filter=".press" class="btn">press</button>
                                     </div>
                                 </div>
-                                <div class="grid flex flex-row flex-wrap justify-center   mx-auto pb-32 ">
+                                <div class="grid flex flex-row flex-wrap justify-center container mx-auto">
                                     <php>
                                     if(have_rows('gallery')) :
                                     while( have_rows('gallery') ): the_row();
@@ -260,18 +249,17 @@
                                         <a href="https://placem.at/things?w=500&h=350&random=dfegfe" data-fancybox="images"> <img src="https://placem.at/things?w=500&h=350&random=6" alt=""></a>
                                     </div>
                                     <php>endwhile;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    endif;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </php>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                endif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </php>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section id="videos">
                         <div class="bg-overlay-2">
-                            <div class="container mx-auto pb-24">
-                                <h3 class="section-title  pt-24">Videos</h3>
-                                <div class="header-strips-1"></div>
+                            <div class="container mx-auto">
+                                <h3 class="section-title">Videos</h3>
                                 <div class="video-block flex flex-row flex-wrap w-full">
                                     <php>
                                     if(have_rows('video_gallery')) :
@@ -314,120 +302,107 @@
                                         <p class="text-center mt-3 oswald uppercase text-sm">Video Title</p>
                                     </div>
                                     <php>endwhile;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                endif;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </php>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            endif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </php>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section id="music ">
-                        <div class="music-bg">
-                            <div class="music-overlay  ">
+                    <section id="music">
                         <div class="container mx-auto ">
-                            <h3 class="section-title  pt-24">Music</h3>
-                            <div class="header-strips-1"></div>
-                            <div class="flex flex-col md:flex-row  md:flex-wrap justify-center pb-24 ">
-                                <div class="w-full md:w-1/2 lg:w-1/3 p-10 ">
+                            <h3 class="section-title">Music</h3>
+                            <div class="flex flex-col md:flex-row">
+                                <div class="w-full md:w-1/2 p-10 ">
                                     <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/346239864%3Fsecret_token%3Ds-yavhv&color=%23de225c&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                                 </div>
-                                <div class="w-full md:w-1/2 lg:w-1/3 p-10"> 
+                                <div class="w-full md:w-1/2 p-10">
                                     <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/631193934&color=%23de225c&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                                 </div>
-                                <div class="w-full md:w-1/2 lg:w-1/3 p-10 ">
+                                <div class="w-full md:w-1/2 p-10">
                                     <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/521934486&color=%23de225c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
                     </section>
                     <section id="press">
-                        <div class="bg-gray-900">
+                        <div class="bg-overlay-2">
                             <div class="container mx-auto">
-                                <h3 class="section-title  pt-24">Press &amp; Features</h3>
-                                <div class="header-strips-1"></div>
-                                <div class="press flex flex-row flex-wrap justify-center pb-24">
+                                <h3 class="section-title">Press &amp; Features</h3>
+                                <div class="press flex flex-row flex-wrap justify-center">
                                     <php>if ( have_rows('news_items') ) :
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                while( have_rows('news_items') ) : the_row();
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </php>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            while( have_rows('news_items') ) : the_row();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </php>
                                     <div class="press-item   ">
                                         <div class="inner ">
-                                            <h4 class="press-quote gray-txt-2" wp-call-function="get_sub_field('quote')" wp-call-function-set="content" wp-call-function-echo="true">“Nukage drops a collection of beats that are as seismic as they are meticulously well-written.”</h4>
-                                            <a class="press-link text-risered_1 oswald font-bold italic hover:underline" href="#" target="_blank" wp-call-function="get_sub_field('news_source')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="get_sub_field('news_link')" wp-call-function-2-set="href" wp-call-function-echo-2="true">- This Song
+                                            <h4 class="press-quote" wp-call-function="get_sub_field('quote')" wp-call-function-set="content" wp-call-function-echo="true">“Nukage drops a collection of beats that are as seismic as they are meticulously well-written.”</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank" wp-call-function="get_sub_field('news_source')" wp-call-function-set="content" wp-call-function-echo="true" wp-call-function-2="get_sub_field('news_link')" wp-call-function-2-set="href" wp-call-function-echo-2="true">- This Song
                                             Slaps</a>
                                         </div>
                                     </div>
                                     <php>endwhile;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                endif;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </php>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            endif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </php>
                                     <div class="press-item    " cms-no-export>
                                         <div class="inner ">
-                                            <h4 class="press-quote gray-txt-2">“Mind-blowing… monstrous and speaker-crushing“</h4>
-                                            <a class="press-link text-risered_1 oswald font-bold italic hover:underline" href="#" target="_blank">– ThisSongSlaps.com</a>
+                                            <h4 class="press-quote">“Mind-blowing… monstrous and speaker-crushing“</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">– ThisSongSlaps.com</a>
                                         </div>
                                     </div>
                                     <div class="press-item  " cms-no-export>
                                         <div class="inner ">
-                                            <h4 class="press-quote gray-txt-2">“A genre-defying ballistic blitz on the head, heart, and soul. You might even call the experience religious.”</h4>
-                                            <a class="press-link text-risered_1 oswald font-bold italic hover:underline" href="#" target="_blank">– EDMsauce.com</a>
+                                            <h4 class="press-quote">“A genre-defying ballistic blitz on the head, heart, and soul. You might even call the experience religious.”</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">– EDMsauce.com</a>
                                         </div>
                                     </div>
                                     <div class="press-item  " cms-no-export>
                                         <div class="inner ">
-                                            <h4 class="press-quote gray-txt-2">“Gnarly basslines suitable for actual warfare…this should be able to elicit more than just a little headbanging”</h4>
-                                            <a class="press-link text-risered_1 oswald font-bold italic hover:underline" href="#" target="_blank">– YourEDM.com</a>
+                                            <h4 class="press-quote">“Gnarly basslines suitable for actual warfare…this should be able to elicit more than just a little headbanging”</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">– YourEDM.com</a>
                                         </div>
                                     </div>
                                     <div class="press-item  " cms-no-export>
                                         <div class="inner ">
-                                            <h4 class="press-quote gray-txt-2">“Nukage drops a collection of beats that are as seismic as they are meticulously well-written.”</h4>
-                                            <a class="press-link text-risered_1 oswald font-bold italic hover:underline" href="#" target="_blank">– Kolourbridge</a>
+                                            <h4 class="press-quote">“Nukage drops a collection of beats that are as seismic as they are meticulously well-written.”</h4>
+                                            <a class="press-link italic hover:underline" href="#" target="_blank">– Kolourbridge</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- <section id="logos">
-                        <h3 class="section-title ">Logos &amp; Banners</h3>
-                    </section> -->
+                    <section id="logos">
+                        <h3 class="section-title">Logos &amp; Banners</h3>
+                    </section>
                     <section id="contact">
-                        <div class="contact-bg pt-16 pb-32">
-                            <h3 class="section-title   pt-24">Contact</h3>
-                            <div class="header-strips-1"></div>
-                            <div class="container mx-auto flex md:flex-row flex-col max-w-5xl pb-24">
-                                <div class="p-1 md:w-1/2 w-full flex-grow flex flex-col hidden ">
-                                    <h4 class="contact-title  leading-loose text-2xl text-center font-hairline uppercase py-2 border border-blue-500 rounded-t-lg text-blue-500 ">Producer <i class="fas fa-circle "></i> Performer <i class="fas fa-circle"></i> DJ <i class="fas fa-circle"></i> Guitarist</h4>
-                                    <div class="flex flex-row flex-wrap  oswald leading-loose font-hairline border border-blue-500 flex-grow ">
+                        <div class="bg-overlay-2">
+                            <h3 class="section-title">Contact</h3>
+                            <div class="container mx-auto flex flex-row max-w-5xl">
+                                <div class="p-1 w-1/2 ">
+                                    <h4 class="contact-title leading-loose text-2xl text-center font-hairline uppercase mb-3 ">Producer <i class="fas fa-circle "></i> Performer <i class="fas fa-circle"></i> DJ <i class="fas fa-circle"></i> Guitarist</h4>
+                                    <div class="flex flex-row">
                                         <div class=" md:w-1/2 w-full flex items-center  ">
-                                            <img class="mx-auto p-5 md:block hidden" src="images/Nukage-Headshot.png">
+                                            <img class="mx-auto" src="images/Nukage-Headshot.png">
                                         </div>
-                                        <div class=" md:w-1/2 w-full   p-3 mb-3 md:text-left text-center "> I am inspired by producing meaningful content; making deep connections and helping others achieve their own level of personal greatness via my music, session singing services and various entrepreneurial endeavors. </div>
-                                        <div class="w-full text-center">Feel free to reach out to me any time! I'd love to hear from you :)</div>
+                                        <div class=" md:w-1/2 w-full oswald leading-loose font-hairline p-3 mb-3"> I am inspired by producing meaningful content; making deep connections and helping others achieve their own level of personal greatness via my music, session singing services and various entrepreneurial endeavors. </div>
                                     </div>
                                 </div>
-                                <div class="p-1  w-full px-5 oswald uppercase">
+                                <div class="p-1 md:w-1/2 w-full px-5">
                                     <div style="border border-gray-200 rounded-lg">
-                                         
-                                        <div class="wpcf7   pr-4" wp-call-function="do_shortcode('[contact-form-7 id=&quot;62&quot; title=&quot;Contact form 1&quot;]')" wp-call-function-set="content" wp-call-function-echo="true">
-                                            <form class="flex flex-row">
-                                                <div class="w-1/2 pr-3 pl-2">
-                                                    <div class="input-text-wrapper ">
-                                                        <input class=" uppercase  " placeholder="Name *" type="text"  >
-                                                    </div>
-                                                    <div class=" uppercase input-text-wrapper ">
-                                                        <input class=" uppercase " placeholder="Email *" type="text">
-                                                    </div>
-                                                    <div class=" uppercase input-text-wrapper ">
-                                                        <input class=" uppercase " placeholder="Subject" type="text">
-                                                    </div>
-                                                </div>
-                                            <div class=" uppercase textarea-wrapper w-1/2 pr-2">
-                                                <textarea placeholder="Message" class="uppercase h-40" name="" id="" cols="30" rows="50"></textarea>
+                                        <h4 class="contact-title leading-loose text-2xl text-center font-hairline uppercase ">Let's Chat!</h4>
+                                        <form class="flex flex-row flex-wrap" wp-call-function="do_shortcode('[contact-form-7 id=&quot;62&quot; title=&quot;Contact form 1&quot;]')" wp-call-function-set="content">
+                                            <div class="lg:w-1/3 w-full p-2">
+                                                <input class="m-2 w-full bg-overlay-2 border-gray-400 border text-white p-2 rounded " placeholder="Name" type="text">
                                             </div>
-                                            <p class="wcf7-send "><input class="" type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"></p>
+                                            <div class="lg:w-1/3 w-full p-2">
+                                                <input class="m-2 w-full bg-overlay-2 border-gray-400 border text-white p-2 rounded " placeholder="Email" type="text">
+                                            </div>
+                                            <div class="lg:w-1/3 w-full p-2">
+                                                <input class="m-2 w-full bg-overlay-2 border-gray-400 border text-white p-2 rounded " placeholder="Subject" type="text">
+                                            </div>
+                                            <div class="w-full mx-2">
+                                                <textarea placeholder="Message" class="m-2 w-full bg-overlay-2 border-gray-400 border text-white p-2 rounded h-64 " name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
                                         </form>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -481,6 +456,5 @@
         <!-- <script type="text/javascript" src="js/jquery.combinedScroll.js"></script> -->
         <script type="text/javascript" src="js/jquery.nav.js"></script>
         <script type="text/javascript" src="js/headroom.min.js"></script>
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>

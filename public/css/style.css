@@ -20,6 +20,10 @@
 .qs-bg{
 
 }
+
+.qs-bg {
+    background-image: url('../images/gradientbg8.jpg')
+}
 .bio-bg{
     /* background-image: url('../images/CATS-3-JustBG.jpg');  */
     /* background-image: url('../images/nukage-blurbg-1.jpg'); */

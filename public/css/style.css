@@ -12,14 +12,23 @@
 
 
   }
-  #contact{
-    background-image: url('../images/nukage-blurbg-2.jpg');
+.contact-bg{
+    background-image: url('../images/nukage-gradientbg6.jpg');
 
   }
 
-.qs-bg{
+  .press-bg{
+    background-image: url('../images/nukage-gradientbg4.jpg');
+  }
 
+  .videos-bg{
+    background-image: url('../images/gradientbg7.jpg')
+  }
+.photos-bg{
+    background-image: url('../images/nukage-gradientbg5.jpg')
+   
 }
+ 
 
 .qs-bg {
     background-image: url('../images/gradientbg8.jpg')
@@ -30,7 +39,10 @@
     background-image: url('../images/nukage-gradientbg3.jpg')
 }
 .music-bg {
-    background-image: url('../images/lit-blurred-bg-bw.jpg');
+    /* background-image: url('../images/lit-blurred-bg.jpg'); */
+    background-image: url('../images/nukage-gradientbg2.jpg');
+
+    
 }
 p {
     margin-bottom:1rem;

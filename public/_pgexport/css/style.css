@@ -4,16 +4,50 @@
 
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800|Oswald:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800|Raleway:100,300,400,600,700,800,900|Oswald:200,300,400,500,600,700&display=swap');
  
 
 
+#bio {
 
 
+  }
+.contact-bg{
+    background-image: url('../images/nukage-gradientbg6.jpg');
+
+  }
+
+  .press-bg{
+    background-image: url('../images/nukage-gradientbg4.jpg');
+  }
+
+  .videos-bg{
+    background-image: url('../images/gradientbg7.jpg')
+  }
+.photos-bg{
+    background-image: url('../images/nukage-gradientbg5.jpg')
+   
+}
+ 
+
+.qs-bg {
+    background-image: url('../images/gradientbg8.jpg')
+}
+.bio-bg{
+    /* background-image: url('../images/CATS-3-JustBG.jpg');  */
+    /* background-image: url('../images/nukage-blurbg-1.jpg'); */
+    background-image: url('../images/nukage-gradientbg3.jpg')
+}
+.music-bg {
+    /* background-image: url('../images/lit-blurred-bg.jpg'); */
+    background-image: url('../images/nukage-gradientbg2.jpg');
+
+    
+}
 p {
     margin-bottom:1rem;
-    font-weight:200;
-    /* line-height:2.5rem; */
+    /* font-weight:200; */
+    line-height:2.5rem;
 }
 
 body{
@@ -37,10 +71,7 @@ body{
 
 
 
-.sign-up-nav-link {
-    color:rgba(222,34,92, 1) ;
-    border: rgba(222,34,92, 1) solid 1px ;
-}
+ 
 
 /* .quick-list-holder ul {
     margin:0;padding:0;

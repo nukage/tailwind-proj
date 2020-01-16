@@ -36,6 +36,7 @@ $(function () {
             var headroom  = new Headroom(myElement);
             // initialise
             headroom.init();
+            console.log('headrooooom')
       },
         
         gallery: function (){
@@ -122,11 +123,13 @@ $(function () {
       (function($){
         $.fn.extend({ 
             rotaterator: function(options) {
+     
                 var defaults = {
                     fadeSpeed: 500,
                     pauseSpeed: 100,
             child:null
                 };
+                 
                 var options = $.extend(defaults, options);
              
                 return this.each(function() {
@@ -150,12 +153,10 @@ $(function () {
             }
         });
     })(jQuery);
-    
      $(document).ready(function() {
             $('.rotator').rotaterator({fadeSpeed:500, pauseSpeed:3000});
      });
     }, 
-
         mainModal: function (elem, modalBG, btn, modalContent) {
             // console.log('Malchimpmodal Loaded')
             $(elem).on('click', function (e) {
@@ -196,13 +197,12 @@ $(function () {
             });
           }
     }
-
     nukage.faq();
     nukage.gallery();
-    nukage.loadAnimate('.fade-anim', 100, 200, 'fade-in' );
+    nukage.loadAnimate('.fade-anim', 0, 200, 'fade-in' );
     nukage.loadAnimate('.slide-in-anim', 1000, 100, 'slide-in-blurred-bottom' );
     nukage.mainModal('.sign-up-nav-link', '.modal-mc-bg', '.modal-close', '.modal-mc');
-    nukage.combinedScroll();
+    // nukage.combinedScroll();
     nukage.headroom();
     nukage.textRotator();
     // nukage.skrollr();

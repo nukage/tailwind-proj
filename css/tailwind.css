@@ -45,19 +45,30 @@ $gray-txt-1: #a3a3a3;
 
   @screen md {
     background-attachment: fixed;
-    }
+
+    
   background-size: cover;
+    } 
+
+  background-size:  auto;
+  background-position: center  center ;
   margin:0;
   padding:0;
 }
 
-.qs-bg, .contact-bg, .press-bg, .videos-bg , .music-bg, .bio-bg, .photos-bg {
+.qs-bg, .contact-bg, .press-bg, .videos-bg , .music-bg, .bio-bg, .photos-bg, .openmic-main {
   @extend .overlay-1 ; 
 }
-
+.openmic-overlay{
+  background: rgba(0, 39, 3, 0.795);
+}
 .press-overlay{
-  background: rgba(4, 2, 20, 0.397);
+  background: rgba(0, 48, 28, 0.397);
   background-image: url(../images/overlay-pattern3.png);
+}
+
+.signup-overlay  {
+  background: rgba(0, 31, 26, 0.644);
 }
 
 .img-overlay {  
@@ -202,32 +213,37 @@ h1, h2, h3, h4, h5 {
 
 
 /* PRESS & FEATURES */
+.press-link {
+  @apply font-hairline;
+  span {
+    @apply font-black;
+  }
 
+}
 
 .press-item {
-  @apply  w-3/4 mt-4   leading-loose;
+  @apply  w-3/4 mt-4   leading-loose w-full text-center;;
+    h4 {
+      @apply text-xl;
+      @screen  sm  {
+        @apply text-3xl ;
+      }
+    }
+    .inner {
+      @apply   p-5 text-left flex-grow items-stretch; 
+    }
+   
+  }
  
-  .inner {
-    @apply   p-5 text-left flex-grow items-stretch; 
-  }
-  .press-link {
-    @apply text-right;
-  }
-}
-@screen  sm  {
-  .press-item { 
-    @apply text-lg w-1/2 text-center;
-  }
-  .press-link {
-    text-align: inherit;
-  }
-}
+
+
+
 
 
 
 @screen md {
   .press-item {
-    @apply w-1/3;
+    @apply w-1/2;
     .inner {
       @apply text-left;
     }
@@ -386,10 +402,12 @@ h1, h2, h3, h4, h5 {
 }
 
 
+
+
 .wpcf7 form {
   @apply flex flex-row flex-wrap;
   
-  input[type="text"], input[type="email"]  {
+  input[type="text"], input[type="email"], input[type="tel"]  {
     @apply m-2 w-full border-gray-400 border text-white p-2 bg-transparent uppercase;
   }
   .contact-leftcol {
@@ -415,6 +433,37 @@ h1, h2, h3, h4, h5 {
      @apply bg-risered text-black;
     }
 
+  }
+}
+
+#signup {
+  .wpcf7 form {
+    @apply flex flex-row flex-wrap justify-between oswald normal-case;
+    input[type="submit"] {
+      @apply oswald trans font-extrabold uppercase block w-full border border-risered bg-risered_bg_1 text-risered px-4 py-1   cursor-pointer font-hairline text-xl bg-transparent;
+    }
+    input[type="submit"]:hover{
+      @apply bg-risered text-black;
+     }
+    label {
+      @apply pl-2
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+      @apply m-0 normal-case;
+    }
+    
+    textarea {
+      @apply m-0 normal-case;
+    }
+    .vc_col-sm-12, .vc_col-sm-6 {
+      @apply pt-2
+    }
+    .vc_col-sm-12 {
+      @apply w-full
+    }
+    .vc_col-sm-6 {
+     width:49%;
+    }
   }
 }
 

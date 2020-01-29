@@ -667,11 +667,14 @@ video {
 
 .overlay-1 {
     background-attachment: fixed;
+
+    background-size: cover;
 }
   }
 
 .overlay-1 {
-  background-size: cover;
+  background-size:  auto;
+  background-position: center  center ;
   margin:0;
   padding:0;
 }
@@ -680,11 +683,14 @@ video {
 
 .qs-bg, .contact-bg, .press-bg, .videos-bg, .music-bg, .bio-bg, .photos-bg {
     background-attachment: fixed;
+
+    background-size: cover;
   }
 }
 
 .qs-bg, .contact-bg, .press-bg, .videos-bg, .music-bg, .bio-bg, .photos-bg {
-  background-size: cover;
+  background-size:  auto;
+  background-position: center  center;
   margin:0;
   padding:0;
 }
@@ -868,11 +874,31 @@ h1, h2, h3, h4, h5 {
 
 /* PRESS & FEATURES */
 
+.press-link {
+  font-weight: 100;
+}
+
+.press-link span {
+    font-weight: 900;
+  }
+
 .press-item {
   width: 75%;
   margin-top: 1rem;
   line-height: 2;
+  width: 100%;
+  text-align: center;
 }
+
+.press-item h4 {
+    font-size: 1.25rem
+  }
+
+@media  (min-width: 640px)  {
+  .press-item h4 {
+      font-size: 1.875rem
+  }
+    }
 
 .press-item .inner {
     padding: 1.25rem;
@@ -881,25 +907,9 @@ h1, h2, h3, h4, h5 {
     align-items: stretch;
   }
 
-.press-item .press-link {
-    text-align: right;
-  }
-
-@media  (min-width: 640px)  {
-  .press-item {
-    font-size: 1.125rem;
-    width: 50%;
-    text-align: center;
-  }
-
-  .press-link {
-    text-align: inherit;
-  }
-}
-
 @media (min-width: 768px) {
   .press-item {
-    width: 33.333333%;
+    width: 50%;
   }
     .press-item .inner {
       text-align: left;

@@ -305,6 +305,10 @@ h1, h2, h3, h4, h5 {
   filter:  grayscale(100%) ;
 }
 
+.filter-blur{
+ 
+  filter: blur(5px) ;
+}
 
 .gray:hover{
   filter:  grayscale(0%) ;
@@ -466,6 +470,33 @@ h1, h2, h3, h4, h5 {
     }
   }
 }
+
+
+/* RELEASE SINGLE PAGES */
+
+#download-box {
+  transition: 1200ms all;
+}
+.download-box-hidden{
+
+  opacity: 0; 
+  
+  height:0px;
+  overflow:none;
+  margin-bottom:-10px;
+  pointer-events:none; 
+}
+.download-box-shown{
+  height:280px; 
+  opacity: 100; 
+  overflow:none;
+} 
+
+.btn-go-away {
+  opacity:0 !important;
+  pointer-events:none; 
+}
+
 
 @screen lg {
   .wpcf7 form .input-text-wrapper {

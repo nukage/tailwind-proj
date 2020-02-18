@@ -4,7 +4,7 @@
  Template Post Type: page
 */
 ?>
-<?php get_header( 'page-hello' ); ?>
+<?php get_header(); ?>
 
 <div class="bg-overlay ">
     <section id="quick-stats" class="oswald md:text-xl">
@@ -16,14 +16,14 @@
                     </div>
                     <div class=" w-full container flex flex-col quick-list-holder    items-center justify-center">
                         <div class="uppercase text-gray-500 mb-4 fade-anim">
-                            <?php _e( 'ARTIST • PRODUCER • PERFORMER •', 'nukage2020' ); ?>
-                            <?php _e( 'DJ', 'nukage2020' ); ?> 
+                            <?php _e( 'ARTIST • PRODUCER • PERFORMER •', 'nukage2020_a' ); ?>
+                            <?php _e( 'DJ', 'nukage2020_a' ); ?> 
                         </div>
                         <img class=" h-auto w-auto fade-anim" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/nukage logo.png">
                         <div class="uppercase text-gray-500 mb-4 fade-anim raleway font-extrabold mt-3 fade-anim trans">
                             <div class="rotator inline-block trans ">
                                 <div class="inline">
-                                    <?php _e( 'Electronic Music Producer', 'nukage2020' ); ?>
+                                    <?php _e( 'Electronic Music Producer', 'nukage2020_a' ); ?>
                                 </div>
                                 <!-- <div class="inline">Live Performer</div>
                                 <div class="inline">Live DJ</div>
@@ -50,4 +50,4 @@
     <!-- #bio -->
 </div>                
 
-<?php get_footer( 'page-hello' ); ?>
+<?php get_footer(); ?>

@@ -4,7 +4,7 @@
  Template Post Type: page
 */
 ?>
-<?php get_header( 'single-minimix' ); ?>
+<?php get_header(); ?>
 
 <div class="bg-albumart bg-cover bg-black h-full">
     <?php echo PG_Image::getPostImage( null, 'full', array(
@@ -98,4 +98,4 @@
     <div class="h-20"></div>
 </div>                
 
-<?php get_footer( 'single-minimix' ); ?>
+<?php get_footer(); ?>

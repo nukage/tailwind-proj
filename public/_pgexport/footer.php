@@ -10,7 +10,7 @@
                     <div class="modal-close">
                         <img src="https://singstreet.com/wp-content/themes/singstreet-v1/_images/close_icon.png" alt="" class="image-2 cursor-pointer absolute top-0 right-0 w-3 m-3 hover:opacity-25 trans">
                     </div>
-                    <h3 class="text-3xl uppercase font-black   text-center  "><?php _e( 'Sign Up', 'nukage2020' ); ?></h3> 
+                    <h3 class="text-3xl uppercase font-black   text-center  "><?php _e( 'Sign Up', 'nukage2020_a' ); ?></h3> 
                     <!-- Begin Mailchimp Signup Form -->
                     <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
                     <div id="mc_embed_signup">
@@ -18,7 +18,7 @@
                             <div id="mc_embed_signup_scroll">
                                 <div class="indicates-required">
                                     <span class="asterisk">*</span> 
-                                    <?php _e( 'indicates required', 'nukage2020' ); ?>
+                                    <?php _e( 'indicates required', 'nukage2020_a' ); ?>
                                 </div>
                                 <div class="mc-field-group">
                                     <input type="email" value="" name="EMAIL" class="required email border border-gray-600  my-2 p-2 w-full bg-transparent text-white uppercase " id="mce-EMAIL" placeholder="Email *">
@@ -48,12 +48,12 @@
         </div>
         <footer>
             <div class="container mx-auto flex flex-row items-center h-full p-5 align-middle justify-center text-gray-700 text-xs">
-                <?php _e( '&copy; Copyright 2020 Nukage', 'nukage2020' ); ?>
+                <?php _e( '&copy; Copyright 2020 Nukage', 'nukage2020_a' ); ?>
             </div>
         </footer>
         <!-- .body-wrapper -->
         <!-- Js lib -->
-        <!-- <script src="js/skrollr.min.js"></script> -->
+        <!-- <script src="js/jquery.combinedScroll.js"></script> -->
         <?php wp_footer(); ?>
     </body>
 </html>

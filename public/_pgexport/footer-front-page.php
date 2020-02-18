@@ -10,7 +10,7 @@
                     <div class="modal-close">
                         <img src="https://singstreet.com/wp-content/themes/singstreet-v1/_images/close_icon.png" alt="" class="image-2 cursor-pointer absolute top-0 right-0 w-3 m-3 hover:opacity-25 trans">
                     </div>
-                    <h3 class="text-3xl uppercase font-black   text-center  "><?php _e( 'Sign Up', 'nukage2020' ); ?></h3> 
+                    <h3 class="text-3xl uppercase font-black   text-center  "><?php _e( 'Sign Up', 'nukage2020' ); ?></h3>
                     <!-- Begin Mailchimp Signup Form -->
                     <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
                     <div id="mc_embed_signup">
@@ -34,9 +34,9 @@
                                     <input type="text" value="" name="LNAME" class=" border border-gray-600  my-2 p-2 w-full bg-transparent text-white uppercase" id="mce-LNAME" placeholder="Last Name">
                                 </div>
                                 <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>                                 
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                                     <input type="text" name="b_748d58fe44a6b6eb6bba2b7ae_9ce2d4839d" tabindex="-1" value="">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div>                     
+                    </div>
                     <!--End mc_embed_signup-->
                 </div>
             </div>
@@ -60,3 +60,5 @@
         <!-- Js lib -->
         <!-- <script type="text/javascript" src="js/jquery.combinedScroll.js"></script> -->
         <?php wp_footer(); ?>
+    </body>
+</html>
